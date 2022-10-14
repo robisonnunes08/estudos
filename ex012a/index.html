@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias Flexíveis</title>
+</head>
+<body>
+    <h1>Midia Flexível Homem de Ferro</h1>
+    <p>Para verificar a ação de flexibilidade desta mídia, aumente e diminua seu navegador.</p>
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/fundo-homem-de-ferro-png-p1.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fundo-homem-de-ferro-png-m1.png" type="image/png">
+        <img src="imagens/fundo-homem-de-ferro-png-g1.png" alt="midia flexível">
+    </picture>
+    <h1>Música do homem de Ferro</h1>
+    <p>Vamos reproduzir áudio em HTML 5</p>
+   <audio preload="metadata" autoplay controls> 
+          <source src="midia/ironman-mp3.mp3" type="audio/mpeg">
+          <source src="midia/ironman-ogg.ogg" type="audio/ogg">
+          <source src="midia/ironman-wav.wav" type="audio/wav">
+          <source src="midia/ironman-webm.webm" type="audio/webm">
+   </audio>
+   <h1>Abaixo está um vídeo do Iron Man</h1>   
+         <video width="450" poster="imagens/fundo-homem-de-ferro-png-p1.png" controls>             
+             <source src="midia/v-ironman-mp4.mp4" type="video/mp4">
+             <source src="midia/v-Ironman-m4v-conv.m4v" type="video/m4v">
+         </video>
+
+   <p>Bacana esse vídeo acima hein!!</p>
+    <h1>Agora temos um vídeo motivacional</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zyv57MXs1R8?start=37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/Zyv57MXs1R8" frameborder="0"></iframe>
+
+</body>
+</html>
