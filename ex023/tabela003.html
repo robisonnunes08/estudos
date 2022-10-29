@@ -16,19 +16,25 @@
 
         table {
             border-collapse: collapse;
+            margin-top: 30px;
          
         }
 
+        tbody > tr:nth-child(2n) {
+            background-color: #498ec494;
+        }
+
+
         th {
             border: 1px solid black;
-            background-color: rgb(163, 160, 160);
+            background-color: rgb(100, 100, 100);
+            color: white;
             padding: 10px;
         }
 
         td { 
             border: 1px solid black;
             text-align: center;
-            background-color: rgb(193, 255, 234);
         }
 
         .num {
@@ -39,14 +45,25 @@
             width: 100px;
         }
 
-        tfoot {
-            background-color: rgb(163, 160, 160);
+        caption {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5em;
+            background-color: #183643;
+            color: white;
+            border: 1px solid black;
+
+        }
+
+        .rodape {
+            background-color: rgb(100, 100, 100);
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Lista de unidades federativas <br> do Brasil por população</h1>
+        
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
                     <th>Posição</th>
@@ -248,12 +265,12 @@
 
             </tbody>
 
-            <tfoot>
+            <tfoot class="rodape">
                 <tr>
-                    <th>---</th>
-                    <td><strong>Total de Habitantes</strong></td>
-                    <td><strong>213.317.639</strong></td>
-                    <td><strong>100 %</strong></td>
+                    <th class="rodape">---</th>
+                    <td class="rodape"><strong>Total de Habitantes</strong></td>
+                    <td class="rodape"><strong>213.317.639</strong></td>
+                    <td class="rodape"><strong>100 %</strong></td>
                 </tr>
 
             </tfoot>
