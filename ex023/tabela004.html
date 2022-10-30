@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclando Tabelas</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 350px;
+            height: 100px;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .destaque {
+            background-color: antiquewhite;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Mesclando Tabelas</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+
+        <tr>
+            <td>E</td>
+            <td>F</td>
+            <td colspan="2" class="destaque">G</td>
+            
+        </tr>
+
+        <tr>
+            <td rowspan="2" class="destaque">H</td>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+        </tr>
+
+        <tr>
+            
+            <td>L</td>
+            <td colspan="2" class="destaque">M</td>
+           
+        </tr>
+
+    </table>
+    
+</body>
+</html>
