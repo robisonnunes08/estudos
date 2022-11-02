@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela agrupamento de Colunas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+           
+        }
+
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+
+        th {
+            background-color: gray;
+        }
+
+        th, td {
+            text-align: center;
+            border: 1px solid black;
+            width: 100px;
+        }
+
+        .cnome , .cidade {
+            background-color: bisque;
+        }
+
+        .csexo , .cprof {
+            background-color: rgb(204, 247, 162);
+        }
+
+        .cprof {
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+                
+            </colgroup>
+
+            <caption>Cadastro</caption>
+            <tr>
+                <th  scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+
+            <tr>
+                <td>Róbison</td>
+                <td>M</td>
+                <td>43</td>
+                <td>Desenvolvedor Web</td>
+            </tr>
+
+            <tr>
+                <td>Lisiane</td>
+                <td>F</td>
+                <td>38</td>
+                <td>Confeiteira</td>
+            </tr>
+
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+
+            <tr>
+                <td>Nelcy</td>
+                <td>F</td>
+                <td>60</td>
+                <td>Massoterapeuta</td>
+            </tr>
+
+            <tr>
+                <td>Paulo</td>
+                <td>M</td>
+                <td>33</td>
+                <td>Pedreiro</td>
+            </tr>
+
+    </table>
+
+    
+</body>
+</html>
